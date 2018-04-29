@@ -3,9 +3,9 @@
     <input @keypress.enter="search" v-model="q">
     <button @click="search">Search</button>
     <div v-for="movie in movies" :key="movie.imdbID">
-      <h1>{{movie.Title}}</h1>
-      <img :src="movie.Poster" alt="">
-    </div>
+      <p>{{movie.Title}}</p>
+      <img :src="movie.Poster" alt="">     
+    </div> 
   </div>
 </template>
 
@@ -17,7 +17,6 @@ export default {
   data () {
     return {
       q: 'avenger'
-      // movies: []
     }
   },
   async created () {

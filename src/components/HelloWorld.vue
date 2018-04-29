@@ -4,8 +4,8 @@
     <button @click="search">Search</button>
     <div v-for="movie in movies" :key="movie.imdbID">
       <p>{{movie.Title}}</p>
-      <img :src="movie.Poster" alt="">     
-    </div> 
+      <img :src="movie.Poster" alt="">
+    </div>
   </div>
 </template>
 
